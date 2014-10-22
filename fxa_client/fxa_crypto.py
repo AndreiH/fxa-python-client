@@ -20,7 +20,7 @@ from .hkdf import HKDF
 from .pbkdf2 import pbkdf2_bin
 
 RESTMAILURL = "http://restmail.net/mail/"
-BASEURL = "https://stable.dev.lcip.org/auth/v1/"
+BASEURL = "https://stable.dev.lcip.org/auth/"
 if os.getenv("PUBLIC_URL"):
     BASEURL = os.getenv("PUBLIC_URL")
     assert BASEURL.endswith("/")
